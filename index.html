@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake & Ladder</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div id="game">
+    <div id="gameBoardSection">
+      <div id="grid">
+         <div id="bigSnake"></div>
+          <div id="ladder"></div>
+      </div>
+      <div id="player1" style="position:absolute; top:10px; left:10px;">
+        <img src="http://s19.postimg.org/t108l496n/human_Piece.png" />
+      </div>
+      <div id="player2" style="position:absolute; top:15px; left:5px;">
+        <img src="http://s19.postimg.org/l6zmzq1dr/computer_Piece.png" />
+      </div>
+    </div>
+    <div id="diceAndPlayerSection">
+      <div id="diceSection">
+          <button type="button" name="roldDice" onClick="rollDice()">Roll Dice</button>
+        <img src="" name="mydice" style="background-color: white;">
+      </div>
+      <div id="reportSection">
+          <button type="button" name="generateReport" onClick="generateReport()">GenerateReport</button>
+          <table id = "reportTable" style="display:none">
+              <thead>
+              <tr>
+                 <th> Number of throws</th>
+                 <th>Number of times a six was rolled</th>
+                  <th>Number of ladders climbed</th>
+                  <th>Number of snakes encountered</th>
+              </tr>
+                  </thead>
+              <tbody>
+              </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html> 

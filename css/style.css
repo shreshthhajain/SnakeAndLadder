@@ -1,0 +1,88 @@
+#game {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+#gameBoardSection {
+  border: 3px inset #0FF;
+  border-radius: 10px;
+  width: 65%;
+  display: table-cell;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  line-height: normal;
+  vertical-align: bottom;
+  text-align: left;
+  border: 0px solid #FFFFFF;
+  position: relative;
+}
+
+#gameTable tr:nth-child(odd) td:nth-child(even),
+#gameTable tr:nth-child(even) td:nth-child(odd) {
+  background-color: PowderBlue;
+}
+
+#gameTable tr:nth-child(even) td:nth-child(even),
+#gameTable tr:nth-child(odd) td:nth-child(odd) {
+  background-color: SkyBlue;
+}
+
+#100 {
+  background-image: url('http://s19.postimg.org/ceioc1g8v/rotstar2_e0.gif');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#ladder {
+  position: absolute;
+  z-index: 1;
+  height: 50%;
+  width: 20%;
+  background: url(http://s19.postimg.org/otai9he2n/oie_e_RDOY2iqd5o_Q.gif);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+    bottom:0;
+    right:0
+}
+
+#grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#bigSnake {
+  position: absolute;
+  z-index: 1;
+  height: 50%;
+    width: 55%;
+    background: url(http://s19.postimg.org/hrcknaagz/oie_485727s_RN4_KKBG.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+#diceAndPlayerSection {
+  background-color: lightpink;
+  border: 1px;
+  border-style: solid;
+  display: table-cell;
+  border-radius: 10px;
+  border: 3px inset #0FF;
+  width: 35%;
+}
+
+#reportTable,#reportTable th,#reportTable td {
+   border: 1px solid black;
+}
