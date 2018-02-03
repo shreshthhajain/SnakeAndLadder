@@ -149,6 +149,7 @@ function rollDice() {
     numberOfSixes = numberOfSixes > 2 ? 0 : numberOfSixes;
     $("#reportTable > tbody").html("");
     $("#reportTable").css("display", "none");
+    $("#turnNumber").text("Player "+ turnNumber + " turn.")
 }
 
 function generateReport() {
