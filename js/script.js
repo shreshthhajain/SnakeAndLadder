@@ -80,16 +80,18 @@ var player = function() {
             if (randomdice === 6) {
                 numberOfTimesSix++;
             }
-            var x = parseInt($('#' + destination).attr('id'));
-            destination = x + randomdice;
-            if (destination === 12) {
-                destination = 31;
+            var x = parseInt(destination);
+            var tempDestination;
+            tempDestination = x + randomdice;
+            if (tempDestination === 12) {
+                tempDestination = 31;
                 numberOfLadders++;
-            } else if (destination === 96) {
-                destination = 57;
+            } else if (tempDestination === 96) {
+                tempDestination = 57;
                 numberOfSnakes++;
             }
-            if (destination <= 100) {
+            if (tempDestination <= 100) {
+                destination = tempDestination;
                 $("#" + destination).append($(id));
             }
             if (destination === 100) {
@@ -138,6 +140,8 @@ function rollDice() {
         alert('Congratulations! You got 6! Roll the dice again');
         isSix = true;
         numberOfSixes++;
+    } else {
+        numberOfSixes = 0;
     }
     if (turnNumber === 1) {
         player1.move("#player1", randomdice);
